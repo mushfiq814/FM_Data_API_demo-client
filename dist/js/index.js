@@ -1,19 +1,12 @@
 var api, app, contact, emailField, errorMessage, fieldIsValid, form, nameField, onSubmit, photoField, setError, submitBtn, submitBtnRegularText, submitBtnSubmittingText, toggleClass, toggleSubmitButtonEnabled;
 
 form = document.getElementById('contactForm');
-
 nameField = document.getElementById('name');
-
 emailField = document.getElementById('email');
-
 photoField = document.getElementById('photo');
-
 submitBtn = document.getElementById('submitBtn');
-
 submitBtnRegularText = document.getElementById('submitBtnRegularText');
-
 submitBtnSubmittingText = document.getElementById('submitBtnSubmittingText');
-
 errorMessage = document.getElementById('errorMessage');
 
 setError = function(message) {
@@ -54,8 +47,8 @@ fieldIsValid = function(field) {
 };
 
 api = {
-  // base_uri: 'http://localhost:8080'
-  base_uri: 'https://dbw05.atrcc.com/FM17_Data_API_demo-middleman/public/index.php'
+  base_uri: 'http://localhost:8000'
+  // base_uri: 'https://dbw05.atrcc.com/FM17_Data_API_demo-middleman/public/index.php'
 };
 
 app = {
